@@ -41,12 +41,19 @@ public class Book {
     public Book() {
     }
 
+    public Book( String title, int amount) {
+        this.title = title;
+        this.amount = amount;
+    }
+
+
     public Book(int id, String title, int amount) {
         this.id = id;
         this.title = title;
         this.amount = amount;
     }
 
+    
     public Book(int id, String title, int amount, Publisher publisher) {
         this.id = id;
         this.title = title;
@@ -62,7 +69,8 @@ public class Book {
         this.authors = authors;
     }
 
-    public int getId() {
+
+	public int getId() {
         return id;
     }
 
