@@ -202,5 +202,4 @@ public class AuthorDB implements AuthorRepositoryService {
       
         return (authors.isEmpty()) ? null : authors;
     }
-
 }
