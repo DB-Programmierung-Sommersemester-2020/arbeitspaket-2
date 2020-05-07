@@ -61,6 +61,14 @@ public class Author {
         this.lastName = lastName;
     }
 
+    public Collection<Book> getBooks() {
+        return books;
+    }
+
+    public void setBooks(Collection<Book> books) {
+        this.books = books;
+    }
+
     @Override
     public int hashCode() {
         final int prime = 31;
@@ -99,6 +107,5 @@ public class Author {
     public String toString() {
         return "Author [firstName=" + firstName + ", id=" + id + ", lastName=" + lastName + "]";
     }
-    
     
 }
