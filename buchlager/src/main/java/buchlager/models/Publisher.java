@@ -8,7 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
@@ -28,7 +28,7 @@ public class Publisher {
     @JoinColumn(name = "adrId")
     private Address address;
 
-    @ManyToMany(mappedBy = "publischer")
+    @OneToMany(mappedBy = "publisher")
     private Collection<Book> books;
     
     public Publisher() {
