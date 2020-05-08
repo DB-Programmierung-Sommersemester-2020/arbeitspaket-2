@@ -76,7 +76,7 @@ public class AuthorDB implements AuthorRepositoryService {
             Author authorToUpdate = optionalAuthor.get();
             authorToUpdate.setFirstName(newAuthor.getFirstName());
             authorToUpdate.setLastName(newAuthor.getLastName());
-            //TODO: authorToUpdate.setBooks(newAuthor.getBooks()); 
+            authorToUpdate.setBooks(newAuthor.getBooks()); 
             optionalAuthor = Optional.of(authorToUpdate);
             em.getTransaction().commit();
             em.close();
