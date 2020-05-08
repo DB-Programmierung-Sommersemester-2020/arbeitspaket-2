@@ -5,6 +5,7 @@
         <class>buchlager.models.Author</class>
         <class>buchlager.models.Book</class>
         <class>buchlager.models.Publisher</class>
+        <class>buchlager.models.BookAuthor</class>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/demodb" />
