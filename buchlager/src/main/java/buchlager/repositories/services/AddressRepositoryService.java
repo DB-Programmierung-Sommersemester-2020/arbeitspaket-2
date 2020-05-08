@@ -7,5 +7,5 @@ import buchlager.models.Publisher;
 
 public interface AddressRepositoryService extends Repository<Address, Integer>{
     Set<Address> getAdressesByPlace(String place);
-    Set<Address> getAdressByPubliser(Publisher publisher);
+    Address getAdressByPubliser(Publisher publisher);
 }
